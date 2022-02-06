@@ -10,8 +10,25 @@ namespace BinarySearchTree
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("welcome to BST");
+            Console.WriteLine("Welcome to the binary search tree programs");
+            Console.WriteLine("\n1.Insertion.");
+            Console.WriteLine("Enter the option!!!");
+            int num = Convert.ToInt32(Console.ReadLine());
+            BST<int> binarySearchTree = new BST<int>(56);
+            switch (num)
+            {
+                case 1:
+                    binarySearchTree.Insert(30);
+                    binarySearchTree.Insert(70);
+                    binarySearchTree.Display();
+                    break;
+                default:
+                    Console.WriteLine("Enter valid option!!!");
+                    break;
+            }
             Console.ReadLine();
         }
+
     }
 }
+
