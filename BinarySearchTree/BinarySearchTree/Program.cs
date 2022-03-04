@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTree
 {
-    internal class Program
+     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("welcome to BST");
+            Console.WriteLine("Welcome to Hash Table And Binary Search Tree");
+            Binary<int> bst = new Binary<int>(56);
+            bst.Insert(30);
+            bst.Insert(70);
+            Console.WriteLine("Binary Search Tree ");
+            bst.Display();
             Console.ReadLine();
         }
     }
